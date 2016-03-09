@@ -1,16 +1,16 @@
 <html>
     <head>
-        <title>Theremch blog</title>
+        <title>Theremch's blog</title>
     </head>
     <body>
       <div>
-          <h1><a href="/">Django Girls Blog</a></h1>
+          <h1><a href="/">Theremch's Blog</a></h1>
       </div>
 
       {% for post in posts %}
           <div>
-              <p>publié: {{ post.published_date }}</p>
               <h1><a href="">{{ post.title }}</a></h1>
+              <p>publié: {{ post.published_date }}</p>
               <p>{{ post.text|linebreaks }}</p>
           </div>
       {% endfor %}
